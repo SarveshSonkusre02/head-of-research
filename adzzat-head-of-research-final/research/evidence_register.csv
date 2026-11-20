@@ -1,0 +1,8 @@
+case_id,source,example,evidence_type,observed_issue,classification,limitation
+C01,Terminal-Bench announcement,Linux kernel build with QEMU,public agent attempt,interactive session mishandled and agent gave up,tool-use recovery,summary not full raw trajectory
+C02,Terminal-Bench announcement,Raman fitting,public agent attempt,unit mismatch and implausible fit not caught,reasoning and verification,summary not full raw trajectory
+C03,OpenAI SWE-bench Verified audit,pylint-dev__pylint-4551,task/grader defect,hidden test imports unspecified helper,overly strict grader,not evidence of model incapability
+C04,OpenAI SWE-bench Verified audit,sympy__sympy-18199,task/grader defect,tests cover three issues while prompt describes one,wide tests / underspecification,not evidence of model incapability
+C05,OpenAI SWE-bench Verified introduction,scikit-learn__scikit-learn-14520,task/grader defect,exact deprecation warning requirement under-specified,prompt/test misalignment,illustrative example from initial audit
+C06,OpenAI SWE-Bench Pro audit,OpenLibrary-77c16d5,task/grader defect,prompt shows one leading space hidden test expects two,prompt/test contradiction,one published example
+C07,OpenAI SWE-bench Verified contamination audit,django__django-11451,contamination probe,model reconstructed gold patch from hint,leakage / contamination,not a failure; not ordinary evaluation run
